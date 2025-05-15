@@ -3,15 +3,15 @@
 using namespace std;
 class pila{
 	typedef string p;
-	const int TAMPALINDROMA;
-	p palindroma;
+	int TAMPALINDROMA;
+	p palindroma[];
 public:
-	pila(p palindroma);
-	void agregarPila(p palindroma, int tam);
-	bool pilaVacia(p palindroma, int tam);
-	bool pilaLlena(p palindroma, int tam);
+	pila(p palindroma[]);
+	void agregarPila(p palindroma[], int tam);
+	bool pilaVacia(const p palindroma[] );
+	bool pilaLlena(const p palindroma[] );
 	p obtenerPila() const;
-	void listarPila();
+	void listarPila(const p palindroma[]);
 	void compararPila();
 
 };
